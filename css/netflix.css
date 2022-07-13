@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+/* font-family: "League Spartan", sans-serif */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.781);
+  font-family:Arial, Helvetica, sans-serif ;
+
+}
+.home-page{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.674), rgba(0, 0, 0, 0.674)),url(../images/netlixpage.jpg);
+  height: 100vh;
+
+
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+img{
+  width: 100%;
+}
+.logo{
+  width: 10%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+header button{
+  background-color: red;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 5px;
+}
+.sub-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.font-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.card{
+  
+  width: 600px;
+  text-align: center;
+  color: white;
+}
+.card h1{
+  font-size: 45px;
+  padding: 20px 60px;
+  line-height: 45px;
+}
+.card h5{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.card p{
+  padding-bottom: 15px;
+}
+.email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.email input{
+  width: 400px;
+  height: 60px;
+  border: none;
+  padding-left: 15px;
+  border: 1px solid red;
+  font-size: 20px;
+}
+.email a{
+  padding: 20px 20px 20px 20px ;
+  background-color: red;
+  text-align: center;
+}
+section aside{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 70px 45px;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  
+}
+.text{
+  padding-right: 50px;
+}
+.text h1{
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.text p{
+  font-size: 25px;
+  line-height: 35px;
+}
+.tv-image{
+  width: 80%;
+}
+aside:nth-child(3) .text{
+  padding-left: 100px;
+
+}
+aside:nth-child(5) .text{
+  padding-left: 150px;
+
+}
+aside:nth-child(3) .tv-image{
+  width: 90%;
+}
+aside:nth-child(5) .tv-image{
+  width: 100%;
+}
+aside .text p::after{
+  content: ".";
+}
+.questions{
+  
+  text-align: center;
+  padding: 0 300px;
+  background-color: black;
+  color: white;  
+  padding-bottom:100px ;
+  margin: 10px 0;
+
+}
+.questions h3{
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.questions-asked{
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  list-style: none;
+  font-size: 20px;
+  background-color: rgb(77, 76, 76);
+  margin-bottom: 10px;
+  padding: 15px 30px;
+  align-items: center;
+}
+.questions-asked li::after{
+  content: " ?";
+}
+i{
+  font-size: 30px;
+}
+.questions p{
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+footer {
+  color: rgb(166, 162, 162);
+  background-color: black;
+  margin: 10px 0;
+  padding-top: 100px;
+}
+footer p{
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+li{
+  list-style: none;
+}
+.faq{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px 0;
+}
+.faq a{
+  color: rgb(166, 162, 162);
+
+}
+hgroup{
+  padding: 0 200px;
+  line-height: 30px;
+}
+.phone-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  padding: 10px 30px;
+  margin-left:170px;
+  background-color: black;
+  border: 4px solid grey;
+  position: absolute;
+  bottom: 55px;
+  border-radius: 15px;
+  box-shadow: 0px 30px 30px black;
+}
+.phone-card-image , .phone-card-download{
+  width: 20%;
+}
+.phone-card-download{
+  margin-left: 50px;
+}
+.phone-card-text{
+  padding-left: 10px;
+}
+.phone-card img{
+  width: 100%;
+}
+aside:nth-child(3) .tv-image{
+  position: relative;
+}
+aside:nth-child(4){
+  padding-left: 100px;
+  padding-right:450px;
+}
+aside:nth-child(4) .text h1{
+  font-size: 60px;
+}
+
+aside:nth-child(4) .text p{
+  font-size: 40px;
+}
+@media(max-width:800px){
+  section aside{
+    display: block;
+  }
+  .faq{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
